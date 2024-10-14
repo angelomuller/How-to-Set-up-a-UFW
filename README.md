@@ -62,7 +62,7 @@ If everything is going as the screenshots above, you're doing good! This part of
 
 # Experimenting with Remote Desktop application and SSH Server
 
-Using tools such as Remote Desktop and SSH Server to perform ICMP requests are effective practices to ensure your configurations are being deployed properly.
+Using tools such as Remote Desktop and SSH Server (Secure Shell) to perform ICMP requests are effective practices to ensure your configurations are being deployed properly.
 If you haven't installed yet, start by adding _OpenSSH Server_ under the tab _Apps > Optional features_ in your Windows machine.
 
 ![Screenshot_16](https://github.com/user-attachments/assets/42f38504-85eb-4467-97f0-5e1a15b4dc71)
@@ -75,10 +75,21 @@ Now do the same on the _OpenSSH Server_ tab.
 
 ![Screenshot_18](https://github.com/user-attachments/assets/59878c7f-f608-42ff-a7c2-de3b1ffea06c)
 
+With SSH Server now installed and enabled, in theory our SSH connection should be up and running, right?
+Let's check using the tool _PuTTy_ on our Windows to check this information.
+Quickly download PuTTY and type in your Linux IP address.
 
+![Screenshot_19](https://github.com/user-attachments/assets/55d1f42a-0769-49b9-bed1-d6bd414e3f3f)
 
+![Screenshot_20](https://github.com/user-attachments/assets/de176176-3590-48f5-8b88-995a91df7b60)
 
+You should get back a message like this due to the rules we've change previously prompting the Firewall to block incoming traffic.
+To finalize, check the status of the UFW by typing _sudo ufw status_.
 
+![Screenshot_21](https://github.com/user-attachments/assets/b7361c2e-9bad-4186-96b6-3954b8ea07d8)
 
+# Conclusion
+
+After running the tests and performing the commands, I hope you've learned something new and feel a bit more acquainted with Firewalls outside the traditional interface of a Windows OS. At the end of the day this is just a practice for extreme situations when the standard interface might be compromised and you'll have to potentially troubleshoot the system via the command shell instead of the normal application. However, it's important to practice different solutions for the same problem and using command prompts are the most common technique for cybersecurity practitioners. In order to get back to the configurations you had before starting this lab, simply run disable the UFW by typing _sudo ufw disable_.  
 
 
