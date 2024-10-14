@@ -1,4 +1,4 @@
-# Setting-up-a-UFW-
+# Setting-up a UFW
 
 Uncomplicated Firewall as the name suggests, its a tool for Linux environments that simplifies the process of setting up firewall rules and help protect the network security in a few simple steps.
 The main feature of UFW is the capacity of allowing or denying incoming and outgoing traffic on the network, and that's what we'll demonstrate in this project. It's important to note that all tools presented here have more than one utility and just a sample of it's range will be explored in this presentation.
